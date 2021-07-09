@@ -1,37 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:qiita_app/root.dart';
 
 
-
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class TopPage extends StatefulWidget {
+  TopPage({Key key, this.title}) : super(key: key);
 
 
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _TopPageState createState() => _TopPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _TopPageState extends State<TopPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,7 +41,12 @@ class _MyHomePageState extends State<MyHomePage> {
                             borderRadius: BorderRadius.all(Radius.circular(50.0)),
                           ),
                           child: InkWell(
-                            onTap:() {},
+                            onTap:() {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Root()),
+                              );
+                            },
                             child: Container(
                               height: 50,
                               child: Stack(

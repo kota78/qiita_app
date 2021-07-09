@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:qiita_app/root.dart';
+import 'package:qiita_app/Top_Page_01.dart';
 
 void main() => runApp(MyApp());
 
@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      home: Root(),
+      home: TopPage(),
     );
   }
 }
