@@ -10,9 +10,13 @@ class TagPage extends StatelessWidget {
             SliverList(
               delegate: SliverChildListDelegate(
                   [
-                    Card(child: ListTile(title: Text("aaa"),subtitle: Text("bbb"),leading: FlutterLogo(),)),
-                    Card(child: ListTile(title: Text("aaa"),subtitle: Text("bbb"),leading: FlutterLogo(),)),
-                    Card(child: ListTile(title: Text("aaa"),subtitle: Text("bbb"),leading: FlutterLogo(),)),
+                    Container(
+                      width: double.infinity,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [Container(width: 30,height: 30,color: Colors.black,)],
+                      ),
+                    )
                   ]
               ),
             ),
