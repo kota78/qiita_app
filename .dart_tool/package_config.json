@@ -140,13 +140,13 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "teirei706",
+      "name": "qiita_app",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-07-08T01:09:38.827115Z",
+  "generated": "2021-07-08T23:39:20.253711Z",
   "generator": "pub",
   "generatorVersion": "2.12.3"
 }
